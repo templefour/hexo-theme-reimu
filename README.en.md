@@ -1120,12 +1120,13 @@ player:
 
 #### Share Link / Card (v1.3.0+)
 
-Disabled by default, currently supports `facebook`, `twitter`, `linkedin`, `reddit`, `weibo`, `qq`, `weixin`.
+Disabled by default, currently supports `facebook`, `twitter`, `bluesky`, `linkedin`, `reddit`, `weibo`, `qq`, `weixin`.
 
 ```yaml
 share:
   # - facebook
   # - twitter
+  # - bluesky
   # - linkedin
   # - reddit
   # - weibo

@@ -1125,12 +1125,13 @@ player:
 
 #### 分享链接/卡片（v1.3.0+）
 
-默认关闭，目前支持 `facebook`、`twitter`、`linkedin`、`reddit`、`weibo`、`qq`、`weixin`。
+默认关闭，目前支持 `facebook`、`twitter`、`bluesky`、`linkedin`、`reddit`、`weibo`、`qq`、`weixin`。
 
 ```yml
 share:
   # - facebook
   # - twitter
+  # - bluesky
   # - linkedin
   # - reddit
   # - weibo

@@ -61,6 +61,9 @@ hexo.extend.helper.register("themeConfig", function () {
   if (config.i18n?.enable) {
     addConfig("i18n_languages", (config.i18n.languages || []).slice(1));
   }
+  if (config.anchor?.explicit?.enable || config.anchor?.auto?.enable) {
+    addConfig("anchor", config.anchor);
+  }
 
   return `<script>${_global.join("")}</script>`;
 });

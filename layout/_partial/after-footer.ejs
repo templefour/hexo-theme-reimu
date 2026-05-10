@@ -214,6 +214,9 @@
       <%_ if (config.highlight.enable || config.syntax_highlighter === "highlight.js") { _%>
         <%- js({ src: "js/insert_highlight.js", "data-pjax": true }) %>
       <%_ } _%>
+      <%_ if (theme.anchor?.explicit?.enable || theme.anchor?.auto?.enable) { _%>
+        <%- js({ src: "js/anchor.js", "data-pjax": true }) %>
+      <%_ } _%>
       <%- js({ src: 'js/tabs.js', 'data-pjax': true, defer: true }) %>
       <%_ if (Array.isArray(theme.share) && theme.share.includes("weixin")) { _%>
         <%- js({src: vendorCdn(theme.vendor.js.snapdom)[0], integrity: vendorCdnIntegrity(theme.vendor.js.snapdom)[0], crossorigin: "anonymous", defer: true, 'data-pjax': true}) %>

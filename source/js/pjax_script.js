@@ -26,6 +26,36 @@ var scrollIntoViewAndWait = (element) => {
   });
 };
 
+var scrollToHashTarget = (hash = window.location.hash) => {
+  if (!hash || hash === "#") return;
+
+  let targetId = hash.slice(1);
+  try {
+    targetId = decodeURIComponent(targetId);
+  } catch (error) {
+    console.warn(`[anchor] invalid hash "${hash}"`, error);
+  }
+
+  if (!targetId) return;
+
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  target.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "center",
+  });
+};
+
+requestAnimationFrame(() => {
+  scrollToHashTarget();
+});
+
+
 // anchor
 _$$(
   ".article-entry h1>a:first-of-type, .article-entry h2>a:first-of-type, .article-entry h3>a:first-of-type, .article-entry h4>a:first-of-type, .article-entry h5>a:first-of-type, .article-entry h6>a:first-of-type"

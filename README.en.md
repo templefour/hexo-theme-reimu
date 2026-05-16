@@ -1161,7 +1161,7 @@ triangle_badge:
   link: https://github.com/D-Sketon/hexo-theme-reimu
 ```
 
-#### Paragraph Anchor
+#### Paragraph Anchor (v1.12.5+)
 
 Disabled by default
 

@@ -1175,7 +1175,7 @@ triangle_badge:
   link: https://github.com/D-Sketon/hexo-theme-reimu
 ```
 
-#### 段落锚点
+#### 段落锚点 (v1.12.5+)
 
 默认关闭
 

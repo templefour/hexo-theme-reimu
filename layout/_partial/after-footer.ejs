@@ -328,8 +328,9 @@
     <script>
     var setupAPlayer = () => {
       if (!<%= theme.player.disable_on_mobile %> || !window.matchMedia('(max-width: 768px)').matches) {
-        const isMobile = window.matchMedia('(max-width: 959px)').matches;
-        if (isMobile) {
+        
+          const isMobile = window.matchMedia('(max-width: 959px)').matches;
+          if (isMobile) {
           const aplayer = _$('#aplayer');
           if (aplayer) {
             const aside = aplayer.parentNode?.parentNode;
@@ -339,7 +340,8 @@
               document.body.appendChild(aplayer);
             }
           }
-        }
+          
+       }
         new APlayer({
           theme: "var(--color-link)",
           container: document.getElementById('aplayer'),

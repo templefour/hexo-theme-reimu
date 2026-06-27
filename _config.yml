@@ -343,7 +343,7 @@ anchor:
 ########################################
 
 baidu_analytics: false
-google_analytics: G-1K332S3T4T
+google_analytics: G-9DTJT3MSYV
 clarity: false
 
 ########################################
@@ -718,19 +718,19 @@ player:
           name: 'Not Going Anywhere',
           artist: 'Keren Ann',
           url: '/music/bgm.mp3',
-          cover: '/music/cover.jpg',
+          cover: '/music/cover1.jpg',
         },
         {
           name: '嵐',
           artist: 'Tank',
           url: '/music/bgm1.mp3',
-          cover: '/music/cover.jpg',
+          cover: '/music/cover1.jpg',
         },
          {
           name: '心经|空',
           artist: 'AI巷仔内',
           url: '/music/bgm2.mp3',
-          cover: '/music/cover.jpg',
+          cover: '/music/cover1.jpg',
         },]
       fixed: false
       autoplay: false        # 建议先设为 false，避免浏览器自动播放策略阻拦
